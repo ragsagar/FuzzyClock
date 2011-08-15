@@ -1,0 +1,28 @@
+Design:
+
+The code is divided into three modules. 
+clock.py 		: Constructs the fuzzy time wordings with words and prepositons in time_in_words.py
+				  and hours and minutes returned by methods in FuzzyTime class in fuzzytime.py
+time_in_words.py	: It contains the hours and minutes in words. Also the prepositions and templates
+				  to be used in wordings.
+fuzzytime.py	: It contains FuzzyTime class which contains methods to return fuzzyhour,fuzzyminutes
+				  and fuzzyfactor.
+
+
+
+Dependencies:
+
+No specific dependencies.Only builtin modules are used.
+
+Usage:
+
+$ python clock.py 
+To spell fuzzy time of current system time.
+
+$ python clock.py -t HH:MM
+or 
+$ python clock.py --time=HH:MM
+To spell the fuzzy time for given time
+
+$ python clock.py -h
+To print help
